@@ -82,7 +82,6 @@ Data ini memberikan gambaran lengkap tentang pesanan, produk, pelanggan, serta l
 
 ## Installation & Usage
 ### 1. Clone repository ke komputer lokal anda menggunakan perintah berikut:
-```bash
 git clone https://github.com/SiscaAngelita/Analysis-E-Commerce-Public-Dataset.git
 
 ### 2. Masuk ke Direktori Proyek
