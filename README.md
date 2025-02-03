@@ -82,14 +82,17 @@ Data ini memberikan gambaran lengkap tentang pesanan, produk, pelanggan, serta l
 
 ## Installation & Usage
 ### 1. Clone repository ke komputer lokal anda menggunakan perintah berikut:
+```bash
 git clone https://github.com/SiscaAngelita/Analysis-E-Commerce-Public-Dataset.git
 
 ### 2. Masuk ke Direktori Proyek
 Masuk ke direktori proyek yang telah Anda clone:
+
 cd Analysis-E-Commerce-Public-Dataset
 
 ### 3. Instal Dependensi
 Instal semua dependensi yang diperlukan dengan menjalankan perintah berikut:
+
 pip install -r requirements.txt
 
 ### 4. Instal Streamlit
@@ -98,10 +101,12 @@ pip install streamlit
 
 ### 5. Menjalankan aplikasi dengan Streamlit
 Anda dapat menjalankan aplikasi analisis menggunakan Streamlit. Gunakan perintah berikut untuk menjalankan aplikasi:
+
 streamlit run dashboard/main.py
 
 ### 6. Menjalankan Jupyter Notebook
 Jika Anda ingin mengeksplorasi data menggunakan Jupyter Notebook, jalankan perintah berikut untuk membuka notebook:
+
 jupyter notebook Proyek_Analisis_Data.ipynb
 
 Atau anda dapat mengunjungi aplikasi streamlit saya dengan [klik di sini](https://analysis-e-commerce-public-dataset-pef9ip8c8ourhgtsccf9dj.streamlit.app/)
