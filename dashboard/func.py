@@ -9,25 +9,25 @@ import gc  # Untuk garbage collection
 # ⏳ 1. Fungsi untuk memuat data (gunakan caching agar cepat)
 @st.cache_data
 def load_data():
-    all_data = pd.read_csv("all_data.csv", dtype={
-        "customer_zip_code_prefix": "category",
-        "customer_city": "category",
-        "customer_state": "category",
-        "order_status": "category",
-        "product_category_name": "category",
-        "seller_zip_code_prefix": "category",
-        "seller_city": "category",
-        "seller_state": "category",
-        "payment_type": "category",
-        "review_score": "int8",
-        "payment_installments": "int8"
-    }, parse_dates=["order_purchase_timestamp", "order_delivered_customer_date"])
-    
-    geolocation_df = pd.read_csv("geolocation_df.csv", dtype={
-        "geolocation_zip_code_prefix": "category",
-        "geolocation_city": "category",
-        "geolocation_state": "category"
-    })
+    all_data = pd.read_csv("data/all_data.csv", dtype={  # Menambahkan 'data/'
+    "customer_zip_code_prefix": "category",
+    "customer_city": "category",
+    "customer_state": "category",
+    "order_status": "category",
+    "product_category_name": "category",
+    "seller_zip_code_prefix": "category",
+    "seller_city": "category",
+    "seller_state": "category",
+    "payment_type": "category",
+    "review_score": "int8",
+    "payment_installments": "int8"
+}, parse_dates=["order_purchase_timestamp", "order_delivered_customer_date"])
+
+geolocation_df = pd.read_csv("data/geolocation_df.csv", dtype={  # Menambahkan 'data/'
+    "geolocation_zip_code_prefix": "category",
+    "geolocation_city": "category",
+    "geolocation_state": "category"
+})
     
     # Tambahkan kolom waktu pembelian
     all_data["purchase_hour"] = all_data["order_purchase_timestamp"].dt.hour
